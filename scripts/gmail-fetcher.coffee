@@ -74,7 +74,7 @@ module.exports = (robot) ->
     return _client
 
   setTimer = (_interval, msg) ->
-    timer = setTimeout doFetch, _interval * 5 * 1000, ((e, mail) ->
+    timer = setTimeout doFetch, _interval * 60 * 1000, ((e, mail) ->
       if e
         robot.logger.info e
       else
